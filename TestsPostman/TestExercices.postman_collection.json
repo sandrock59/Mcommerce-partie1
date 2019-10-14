@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "9b565009-a592-42f0-9eed-8c02325e29c7",
+		"name": "TestExercices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9090/AdminProduits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/AdminProduits",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"AdminProduits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/Produits/triees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/Produits/triees",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits",
+						"triees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"id\": 4,\n\t\"nom\": \"Montre\",\n\t\"prix\": \"0\",\n\t\"prixAchat\": 40\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/Produits",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
